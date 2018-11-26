@@ -120,6 +120,5 @@ $SPLUNK_HOME/bin/splunk start \
   --accept-license --answer-yes \
   --seed-passwd $SPLUNK_ADMIN_PASSWORD
 
-
 # Keep container running
-/bin/bash
+tail -f $SPLUNK_HOME/var/log/splunk/HadoopConnect.log
