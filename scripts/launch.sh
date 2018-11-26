@@ -122,4 +122,4 @@ $SPLUNK_HOME/bin/splunk start \
 
 
 # Keep container running
-/bin/bash
+tail -f $SPLUNK_HOME/var/log/splunk/HadoopConnect.log
